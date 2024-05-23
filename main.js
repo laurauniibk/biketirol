@@ -57,3 +57,7 @@ L.control.layers({
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
+//Plugin GPX Elevation
+let controlElevation = L.control.elevation({}).addTo(map);
+controlElevation.load("data/etappe8.gpx");
