@@ -88,7 +88,8 @@ pulldown.onchange = function (evt) {
 }
 
 // MiniMap 
-let osm2 = new L.tileLayer(
-    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-);
-new L.Control.MiniMap(osm2, { toggleDisplay: true }).addTo(map);
+new L.Control.MiniMap(L.tileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png", {
+    attribution: `Datenquelle: <a href="https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>`
+}), {
+    toggleDisplay: true,
+}).addTo(map);
