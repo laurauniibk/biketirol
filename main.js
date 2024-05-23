@@ -59,5 +59,9 @@ L.control.scale({
 }).addTo(map);
 
 //Plugin GPX Elevation
-let controlElevation = L.control.elevation({}).addTo(map);
+let controlElevation = L.control.elevation({
+    time: false,
+    elevationDiv: "#profile",
+    height: 300,
+}).addTo(map);
 controlElevation.load("data/etappe8.gpx");
