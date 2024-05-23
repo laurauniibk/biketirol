@@ -63,5 +63,7 @@ let controlElevation = L.control.elevation({
     time: false,
     elevationDiv: "#profile",
     height: 300,
+    //theme: "lime-theme",
+    theme: "bike-tirol",
 }).addTo(map);
 controlElevation.load("data/etappe8.gpx");

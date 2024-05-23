@@ -65,3 +65,16 @@ footer nav {
     border-radius: 10px;
     margin-right: 0.5em;
 }
+
+#profile {
+    margin-top: 0.3em;
+    border: 1px solid gray;
+
+}
+
+.bike-tirol {
+    /* meine Farbe fürs Höhenprofil */
+    --ele-area: #a9f3b1;
+    /*Farbe von webmapping: --ele-area: #3D9970; */
+    --ele-bg: white;
+}
