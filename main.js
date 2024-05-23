@@ -32,7 +32,7 @@ let eGrundkarteTirol = {
     nomenklatur: L.tileLayer("https://wmts.kartetirol.at/gdi_nomenklatur/{z}/{x}/{y}.png", {
         attribution: `Datenquelle: <a href="https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>`,
         pane: "overlayPane",
-    })
+    }),
 }
 
 // Hintergrundlayer eGrundkarte Tirol mit GPX-Route overlay
@@ -86,3 +86,9 @@ pulldown.onchange = function (evt) {
     console.log("URL: ", url);
     window.location.href = url;
 }
+
+// MiniMap 
+let osm2 = new L.tileLayer(
+    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+);
+new L.Control.MiniMap(osm2, { toggleDisplay: true }).addTo(map);
