@@ -1,4 +1,4 @@
-[
+const ETAPPEN = [
     {
         "nr": 6,
         "user": "annagruber263",
@@ -119,4 +119,4 @@
         "titel": "Imst - Marienbergjoch - Ehrwald",
         "weblink": "https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-imst-marienbergjoch-ehrwald"
     }
-]
+];
