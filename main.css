@@ -78,3 +78,7 @@ footer nav {
     /*Farbe von webmapping: --ele-area: #3D9970; */
     --ele-bg: white;
 }
+
+#pulldown {
+    margin-bottom: 0.3em;
+}
